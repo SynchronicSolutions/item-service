@@ -1,12 +1,8 @@
-CREATE TABLE IF NOT EXISTS public.users
+CREATE TABLE IF NOT EXISTS public.items
 (
-    id              uuid                NOT NULL DEFAULT gen_random_uuid(),
-    email           TEXT                NOT NULL UNIQUE,
-    first_name      TEXT                NOT NULL,
-    last_name       TEXT                NOT NULL,
-    password        TEXT                NOT NULL,
+    id                  uuid                NOT NULL DEFAULT gen_random_uuid(),
+    itemName            TEXT                NOT NULL UNIQUE,
 
-
-    CONSTRAINT PK_users PRIMARY KEY (id)
+    CONSTRAINT PK_items PRIMARY KEY (id)
 );
 
