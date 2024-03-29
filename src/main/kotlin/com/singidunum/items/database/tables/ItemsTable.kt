@@ -10,5 +10,5 @@ object ItemsTable: IdTable<UUID>("items") {
 
     val itemName = text("itemName")
 
-    override val primaryKey = PrimaryKey(id, name = "PK_users")
+    override val primaryKey = PrimaryKey(id, name = "PK_items")
 }
