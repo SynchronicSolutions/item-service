@@ -1,7 +1,6 @@
 package com.singidunum.items.controllers
 
 import com.singidunum.items.models.Item
-import com.singidunum.items.services.ItemService
 import com.singidunum.items.services.ItemsService
 import kotlinx.serialization.json.JsonObject
 import org.springframework.web.bind.annotation.DeleteMapping
