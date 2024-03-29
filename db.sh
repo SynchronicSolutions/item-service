@@ -8,7 +8,7 @@ DB_NAME=items_db
 PG_IMAGE=postgres:14.11
 
 healthcheck() {
-    until docker exec ${CONTAINER_NAME} pg_isready -U users
+    until docker exec ${CONTAINER_NAME} pg_isready -U items_db
             do
                 echo "Waiting for ${CONTAINER_NAME}..."
     sleep 2
